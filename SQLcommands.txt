@@ -8,3 +8,63 @@ insert into student values('1MS21IS004', 'Emily Davis', '101 Pine St, City, Coun
 insert into student values('1MS21IS005', 'David Brown', '202 Maple St, City, Country', '9554433221', 'Male');
 insert into student values('1MS21IS006', 'Sophia Wilson', '303 Birch St, City, Country', '9443322110', 'Female');
 select * from student;
+
+CREATE TABLE faculty (
+    faculty_id VARCHAR2(10) PRIMARY KEY,
+    fname VARCHAR2(30),
+    department VARCHAR2(30),
+    designation VARCHAR2(20),
+    phno VARCHAR2(10),
+    gender VARCHAR2(6)
+);
+
+INSERT INTO faculty (faculty_id, fname, department, designation, phno, gender)
+VALUES
+('F101', 'Dr. John Smith', 'Computer Science', 'Professor', '9123456789', 'Male');
+
+INSERT INTO faculty (faculty_id, fname, department, designation, phno, gender)
+VALUES
+('F102', 'Dr. Emily Clark', 'Electrical Engineering', 'Associate Professor', '9876543210', 'Female');
+
+INSERT INTO faculty (faculty_id, fname, department, designation, phno, gender)
+VALUES
+('F103', 'Prof. Michael Brown', 'Mechanical Engineering', 'Assistant Professor', '9988776655', 'Male');
+
+INSERT INTO faculty (faculty_id, fname, department, designation, phno, gender)
+VALUES
+('F104', 'Dr. Sophia Davis', 'Civil Engineering', 'Lecturer', '9776655443', 'Female');
+
+INSERT INTO faculty (faculty_id, fname, department, designation, phno, gender)
+VALUES
+('F105', 'Dr. David White', 'Mathematics', 'Professor', '9554433221', 'Male');
+
+
+CREATE TABLE emp (
+    emp_id VARCHAR(11),
+    emp_name CHAR(30),
+    Designation VARCHAR(20),
+    DOB VARCHAR(10),
+    project VARCHAR(20),
+    team_count INT,
+    address VARCHAR(50)
+);
+
+INSERT INTO emp (emp_id, emp_name, Designation, DOB, project, team_count, address)
+VALUES
+('E001', 'John Doe', 'Software Engineer', '1985-05-10', 'Project Alpha', 5, '123 Main St, City, Country');
+
+INSERT INTO emp (emp_id, emp_name, Designation, DOB, project, team_count, address)
+VALUES
+('E002', 'Jane Smith', 'Project Manager', '1990-08-15', 'Project Beta', 8, '456 Elm St, City, Country');
+
+INSERT INTO emp (emp_id, emp_name, Designation, DOB, project, team_count, address)
+VALUES
+('E003', 'Michael Johnson', 'System Analyst', '1987-03-22', 'Project Gamma', 4, '789 Oak St, City, Country');
+
+INSERT INTO emp (emp_id, emp_name, Designation, DOB, project, team_count, address)
+VALUES
+('E004', 'Emily Brown', 'UI/UX Designer', '1992-07-30', 'Project Delta', 3, '101 Pine St, City, Country');
+
+INSERT INTO emp (emp_id, emp_name, Designation, DOB, project, team_count, address)
+VALUES
+('E005', 'David Wilson', 'Quality Assurance', '1988-12-05', 'Project Epsilon', 6, '202 Maple St, City, Country');
